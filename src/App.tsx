@@ -14,12 +14,16 @@ import AdminDashboard from "./pages/admin";
 import Projects from "./pages/projects.tsx";
 import NotFound from "./pages/not-found.tsx";
 import BlogPostDetail from "./pages/blog-post-detail.tsx"; // Import BlogPostDetail
+import { ThemeToggleButton } from "./components/ThemeToggleButton.tsx";
+import { ThemeProvider } from "./components/ThemeProvider.tsx";
 
 const queryClient = new QueryClient();
 
 const App = () => (
+   <ThemeProvider attribute="class">
     <QueryClientProvider client={queryClient}>
         <TooltipProvider>
+            <ThemeToggleButton />
             <Toaster/>
             <Sonner/>
             <BrowserRouter>
@@ -38,6 +42,8 @@ const App = () => (
             </BrowserRouter>
         </TooltipProvider>
     </QueryClientProvider>
+   </ThemeProvider>
+    
 );
 
 export default App;

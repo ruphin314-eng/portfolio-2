@@ -1,4 +1,5 @@
 import { AiOutlineMobile } from "react-icons/ai";
+import { FaJava } from "react-icons/fa";
 import { SiDjango, SiFlutter, SiGit, SiGithub, SiPostgresql, SiPython, SiReact } from "react-icons/si";
 import { SiSqlite } from "react-icons/si";
 import { SiOpenai } from "react-icons/si";
@@ -9,7 +10,7 @@ export const technologies = [
     name: "React",
     icon: SiReact,
     color: "#61DAFB",
-    proficiency: 60,
+    proficiency: 70,
     animate: {
       x: [-150, 50, -50, 50],
       y: [150, 50, -50, 50],
@@ -22,7 +23,7 @@ export const technologies = [
     name: "Django",
     icon: SiDjango,
     color: "#092E20",
-    proficiency: 60,
+    proficiency: 40,
     animate: {
       x: [150, 50, -50, 50],
       y: [-150, 50, -50, 50],
@@ -35,7 +36,7 @@ export const technologies = [
     name: "Python",
     icon: SiPython,
     color: "#3776AB",
-    proficiency: 70,
+    proficiency: 50,
     animate: {
       x: [0, 18, -18, 0],
       y: [0, -22, 22, 0],
@@ -74,7 +75,7 @@ export const technologies = [
     name: "Mobile Apps",
     icon: AiOutlineMobile,
     color: "#38B2AC",
-    proficiency: 75,
+    proficiency: 40,
     animate: {
       x: [0, 50, -50, 50],
       y: [150, 50, -50, 50],
@@ -112,6 +113,19 @@ export const technologies = [
   {
     name: "SQLite",
     icon: SiSqlite,
+    color: "#003B57",
+    proficiency: 50,
+    animate: {
+      x: [50, -50, 50, -50],
+      y: [100, -50, 50, -100],
+      rotate: [0, 20, -20, 0],
+    },
+    transition: { duration: 2.2, repeat: Infinity, repeatType: "reverse", ease: "easeInOut", delay: 0.5 },
+    whileHover: { scale: 1.3, rotate: 25, zIndex: 10 },
+},
+ {
+    name: "Java",
+    icon: FaJava,
     color: "#003B57",
     proficiency: 50,
     animate: {
